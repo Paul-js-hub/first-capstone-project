@@ -1,12 +1,177 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:100,100italic,300,300italic,regular,italic,700,700italic,900,900italic"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/e971436820.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <title>Web Development Course</title>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body>
+    <header class="header-container container-fluid mt-1">
+      <div class="hamburger-container container-fluid" id="hamburger">
+        <a href="javascript:void(0);"><i class="fa fa-bars"></i> </a>
+      </div>
+      <nav class="nav-container container-fluid">
+        <ul class="list-items">
+          <li class="list-item">
+            <i class="fa fa-times close-icon" aria-hidden="true"></i>
+          </li>
+          <li class="list-item goto-page">Home</li>
+          <li class="list-item goto-page">About</li>
+        </ul>
+      </nav>
+    </header>
+    <main class="container-fluid">
+      <section class="welcome-container">
+        <h1 class="h1 header-skills">"Welcome to Skilly".</h1>
+        <h2 class="h3 header-3">
+          Find the Best Courses and Upgrade Your Skills.
+        </h2>
+        <h3 class="h3 description-paragraph">
+          Skilly is an Online Web Development Platform. Skilly offers you the
+          best courses to get you an online remote job within 3 months. Join our
+          million of students and start earning.
+        </h3>
+        <img
+          src="images/web-development.jpg"
+          alt="Web Development Image"
+          class="web-image"
+        />
+        <div class="view-courses">
+          <p class="h4 header-4">VIEW ALL COURSES</p>
+          <i class="fa fa-long-arrow-down" aria-hidden="true"></i>
+        </div>
+      </section>
+      <section class="services-container">
+        <div class="flex-header">
+          <h2 class="h2 our-services">Our Services</h2>
+          <hr class="line-1" />
+        </div>
+
+        <div class="services">
+          <img
+            class="card-img"
+            src="images/self-development.png"
+            alt="Self Development Icon"
+          />
+          <h5 class="card-title">Self Development</h5>
+          <p class="card-text">
+            Some quick example text to build on the card title and make up the
+            bulk of the card's content.
+          </p>
+        </div>
+        <div class="services">
+          <img
+            class="card-img"
+            src="images/zoom-icon.png"
+            alt="Self Development Icon"
+          />
+          <h5 class="card-title">Zoom meetings</h5>
+          <p class="card-text">
+            Some quick example text to build on the card title and make up the
+            bulk of the card's content.
+          </p>
+        </div>
+        <div class="services">
+          <img
+            class="card-img"
+            src="images/study-anywhere.png"
+            alt="Self Development Icon"
+          />
+          <h5 class="card-title">Study Anywhere</h5>
+          <p class="card-text">
+            Some quick example text to build on the card title and make up the
+            bulk of the card's content.
+          </p>
+        </div>
+        <div class="services">
+          <img
+            class="card-img"
+            src="images/study-anywhere.png"
+            alt="Self Development Icon"
+          />
+          <h5 class="card-title">Remote Learning</h5>
+          <p class="card-text">
+            Some quick example text to build on the card title and make up the
+            bulk of the card's content.
+          </p>
+        </div>
+        <div class="join-container">
+          <button class="btn btn-join">Click to Join Our Progrom</button>
+        </div>
+      </section>
+      <section class="container-fluid" id="speaker-container">
+        <div class="flex-header">
+          <h2 class="h2 featured-speakers">Featured Speakers</h2>
+          <hr class="line-1" />
+        </div>
+        <div class="speakers" id="speakers"></div>
+        <div class="display-speakers-button">
+          <button class="more">
+            MORE<span
+              ><i class="fa fa-chevron-down" aria-hidden="true"></i>
+            </span>
+          </button>
+        </div>
+      </section>
+      <section class="partners">
+        <div class="flex-header">
+          <h2 class="h2 partners-header">Partner</h2>
+          <hr class="line-1" />
+        </div>
+        <div class="partners-image">
+          <img
+            src="images/squarespace.png"
+            alt="Squarespace icon"
+            class="partner-image"
+          />
+          <img
+            src="images/facebook.png"
+            alt="Facebook icon"
+            class="partner-image"
+          />
+          <img
+            src="images/google.png"
+            alt="Google icon"
+            class="partner-image"
+          />
+          <img
+            src="images/mozilla.png"
+            alt="Mozilla icon"
+            class="partner-image"
+          />
+          <img src="images/tesla.png" alt="Tesla icon" class="partner-image" />
+        </div>
+      </section>
+      <section class="footer-section">
+        <footer class="footer-container">
+          <h3 class="h3 footer-logo">@Skilly</h3>
+          <h4 class="h4 footer-paragraph">
+            Copyright @2022, all rights reserved
+          </h4>
+        </footer>
+      </section>
+    </main>
+    <script src="index.js"></script>
+  </body>
 </html>
