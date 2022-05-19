@@ -38,10 +38,10 @@ Go to the root folder and run the following:
    $ Open the index.html in your browser
 
 ## Live link
-[Live Vido Link](https://paul-js-hub.github.io/first-capstone-project/)
+[Live Demo Link](https://paul-js-hub.github.io/first-capstone-project/)
 
 ## Please you can watch the video below
-[Live Demo Link](https://www.loom.com/share/87a1c67f87ac4d09991a722f8c6df2ec)
+[Live Video Link](https://www.loom.com/share/87a1c67f87ac4d09991a722f8c6df2ec)
 
 ## Author
 👤 **Paul Onchera**
