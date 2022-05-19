@@ -1,62 +1,61 @@
-let listItems = document.querySelector(".list-items");
-let navContainer = document.querySelector(".nav-container");
-let listItem = document.querySelector(".list-item");
-let hamburger = document.querySelector(".hamburger-container");
-let bars = document.querySelector(".fa-bars");
-let closeIcon = document.querySelector(".fa-times");
+const listItems = document.querySelector('.list-items');
+const navContainer = document.querySelector('.nav-container');
+const hamburger = document.querySelector('.hamburger-container');
+const bars = document.querySelector('.fa-bars');
+const closeIcon = document.querySelector('.fa-times');
 
 function toggleMenuBar() {
-  if (listItems.classList.contains("show-items")) {
-    listItems.classList.remove("show-items", "nav-items");
-    closeIcon.style.display = "none";
-    navContainer.style.display = "none";
-    bars.style.display = "block";
+  if (listItems.classList.contains('show-items')) {
+    listItems.classList.remove('show-items', 'nav-items');
+    closeIcon.style.display = 'none';
+    navContainer.style.display = 'none';
+    bars.style.display = 'block';
   } else {
-    listItems.classList.add("show-items", "nav-items");
-    closeIcon.style.display = "block";
-    navContainer.style.display = "block";
-    bars.style.display = "none";
+    listItems.classList.add('show-items', 'nav-items');
+    closeIcon.style.display = 'block';
+    navContainer.style.display = 'block';
+    bars.style.display = 'none';
   }
 }
 
-hamburger.addEventListener("click", toggleMenuBar);
-closeIcon.addEventListener("click", toggleMenuBar);
+hamburger.addEventListener('click', toggleMenuBar);
+closeIcon.addEventListener('click', toggleMenuBar);
 
-let speakersObj = [
+const speakersObj = [
   {
-    image: "images/Winnie.png",
-    name: "Winnie Mwango",
-    status: "Frontend Developer at Google",
+    image: 'images/Winnie.png',
+    name: 'Winnie Mwango',
+    status: 'Frontend Developer at Google',
     description:
-      "Outstanding Speaker with more than 5 years of experience in Fronted Development.",
+      'Outstanding Speaker with more than 5 years of experience in Fronted Development.',
   },
   {
-    image: "images/Paul.png",
-    name: "Paul Onchera",
-    status: "Software Developer at Microsoft",
+    image: 'images/Paul.png',
+    name: 'Paul Onchera',
+    status: 'Software Developer at Microsoft',
     description:
-      "Great Speaker with more than 6 years of experience in Software Development.",
+      'Great Speaker with more than 6 years of experience in Software Development.',
   },
   {
-    image: "images/Daisy.png",
-    name: "Daisy Monroe",
-    status: "Backend Developer at AirBnB",
+    image: 'images/Daisy.png',
+    name: 'Daisy Monroe',
+    status: 'Backend Developer at AirBnB',
     description:
-      "Great Speaker with more than 6 years of experience in Backend Development.",
+      'Great Speaker with more than 6 years of experience in Backend Development.',
   },
   {
-    image: "images/Daisy.png",
-    name: "Daisy Monroe",
-    status: "Backend Developer at AirBnB",
+    image: 'images/Shantel.png',
+    name: 'Daisy Monroe',
+    status: 'Backend Developer at AirBnB',
     description:
-      "Great Speaker with more than 6 years of experience in Backend Development.",
+      'Great Speaker with more than 6 years of experience in Backend Development.',
   },
 ];
 
 let speakersOutputTemplate = '';
-const speakers = document.getElementById("speakers-id");
+const speakers = document.getElementById('speakers-id');
 
-for(let i = 0; i < 2; i += 1){
+for (let i = 0; i < 2; i += 1) {
   speakersOutputTemplate += `
   <div class="speaker">
     <div class="speaker-image">
@@ -76,10 +75,10 @@ for(let i = 0; i < 2; i += 1){
       </h3>
     </div>
     </div>
-  `
+  `;
 }
 
-for(let i = 2; i < speakersObj.length; i += 1){
+for (let i = 2; i < speakersObj.length; i += 1) {
   speakersOutputTemplate += `
   <div class="speaker" id="expand">
     <div class="speaker-image">
@@ -99,23 +98,23 @@ for(let i = 2; i < speakersObj.length; i += 1){
       </h3>
     </div>
     </div>
-  `
+  `;
 }
 
 speakers.innerHTML = speakersOutputTemplate;
-const showMore = document.querySelector(".more");
-const speaker = document.querySelectorAll(".speaker");
+const showMore = document.querySelector('.more');
+const speaker = document.querySelectorAll('.speaker');
 const showMoreList = () => {
-  if (speaker[2].id === "expand") {
+  if (speaker[2].id === 'expand') {
     for (let i = 2; i < speaker.length; i += 1) {
-      speaker[i].removeAttribute("id");
+      speaker[i].removeAttribute('id');
     }
     showMore.innerHTML = `LESS
         <span class="show-less"><i class="fa fa-angle-up" aria-hidden="true"></i
         ></span>`;
   } else {
     for (let i = 2; i < speaker.length; i += 1) {
-      speaker[i].id = "expand";
+      speaker[i].id = 'expand';
     }
     showMore.innerHTML = `MORE
         <span><i class="fa fa-chevron-down" aria-hidden="true"></i>

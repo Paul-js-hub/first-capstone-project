@@ -7,7 +7,10 @@
 
 ## Built With
 
-- HTML, CSS, Bootstrap, JavaScript
+- HTML
+- CSS
+- Bootstrap
+- JavaScript
 
 
 ## Getting Started

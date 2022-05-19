@@ -29,10 +29,6 @@ body {
   margin-top: 15px;
 }
 
-.hamburger-container {
-  font-size: 32px;
-}
-
 .header-skills {
   color: #ec5242 !important;
   font-family: cocogoose, sans-serif;
@@ -64,17 +60,20 @@ h2.header-3 {
 
 h3.description-paragraph {
   font-size: 16px;
-    font-weight: 500;
-    border: 2px solid #fff;
-    padding: 8px;
-    font-family: Lato, sans-serif;
+  font-weight: 500;
+  border: 2px solid #fff;
+  padding: 8px;
+  font-family: Lato, sans-serif;
 }
+
 .welcome-container {
   background-image: url(images/main-background.png);
 }
+
 .web-image {
   width: 100%;
 }
+
 .services-container {
   height: auto;
   display: flex;
@@ -128,8 +127,8 @@ h2.our-services {
 
 .card-text {
   font-size: 10px;
-    color: #fff;
-    padding-top: 8px;
+  color: #fff;
+  padding-top: 8px;
 }
 
 .line-1 {
@@ -172,6 +171,7 @@ h2.our-services {
   color: white;
   list-style: none;
   padding-top: 4rem;
+
   /* margin: 0 auto; */
   width: 100%;
 }
@@ -183,7 +183,7 @@ h2.our-services {
   right: 1rem;
   padding: 4px;
   cursor: pointer;
-  font-size: 26px;
+  font-size: 32px;
 }
 
 i.fa.fa-times.close-icon {
@@ -196,15 +196,18 @@ i.fa.fa-times.close-icon {
 i.fa.fa-bars {
   position: fixed;
 }
+
 .nav-container {
   display: none;
 }
+
 .navbar-container li {
   list-style: none;
   font-style: normal;
   font-weight: 500;
   font-size: 24px;
 }
+
 .list-items {
   display: flex;
   justify-content: flex-start;
@@ -232,7 +235,7 @@ h2.featured-speakers {
 }
 
 .speaker-image {
-  padding: 0px 4px;
+  padding: 0 4px;
 }
 
 .speaker-details {
@@ -355,23 +358,23 @@ h4.student-text {
 
 .about-container > h1 {
   color: #ec5242;
-    font-family: cocogoose_i, sans-serif;
-    font-weight: bold;
-    padding: 1.2rem 2.2rem;
-    font-size: 2rem;
-    text-align: center;
+  font-family: cocogoose_i, sans-serif;
+  font-weight: bold;
+  padding: 1.2rem 2.2rem;
+  font-size: 2rem;
+  text-align: center;
 }
 
 .about-h2 {
   font-family: Lato, sans-serif;
-    text-align: center;
-    background: #fff;
-    font-size: 21px !important;
-    border-color: #d3d3d3;
-    border-style: solid;
-    border-width: 0.16px;
-    padding: 8px;
-    letter-spacing: 0.8px;
+  text-align: center;
+  background: #fff;
+  font-size: 21px !important;
+  border-color: #d3d3d3;
+  border-style: solid;
+  border-width: 0.16px;
+  padding: 8px;
+  letter-spacing: 0.8px;
 }
 
 h2.contact-h2 {
@@ -421,6 +424,7 @@ h2.skilly-container {
   overflow: hidden;
   box-shadow: 5px 5px 15px #000;
 }
+
 #expand {
   display: none;
 }
@@ -429,13 +433,28 @@ h2.skilly-container {
   #expand {
     display: flex;
   }
-  
+
   .nav-desktop {
     display: flex;
   }
 
   .hamburger-container {
     display: none;
+  }
+
+  h4 > a {
+    color: #ec5242;
+    text-decoration: none;
+  }
+
+  .desktop-navbar > a {
+    font-size: 21px;
+    color: #000;
+  }
+
+  h4 > a:hover {
+    text-decoration: none;
+    color: #ec5242;
   }
 
   .desktop-toolbar {
@@ -447,24 +466,9 @@ h2.skilly-container {
     z-index: 100;
   }
 
-  .desktop-navbar > a {
-    font-size: 21px;
-    color: #000;
-  }
-
   .desktop-navbar > a:hover {
     text-decoration: none;
     color: #000;
-  }
-
-  h4 > a {
-    color: #ec5242;
-    text-decoration: none;
-  }
-
-  h4 > a:hover {
-    text-decoration: none;
-    color: #ec5242;
   }
 
   .contact-bar {
@@ -515,6 +519,10 @@ h2.skilly-container {
     text-align: center;
   }
 
+  h5.logo-heading {
+    color: #ec5242;
+  }
+
   .welcome-container {
     display: flex;
     background-image: url(images/main-background.png);
@@ -532,6 +540,7 @@ h2.skilly-container {
     font-weight: 500;
     width: 75%;
   }
+
   .web-image {
     display: none;
   }
@@ -550,11 +559,10 @@ h2.skilly-container {
   .services:hover {
     box-shadow: 0 0 26px rgb(0, 0, 0, 0.5);
     cursor: pointer;
-}
-  
+  }
 
   .card-img {
-    margin-top: 32px
+    margin-top: 32px;
   }
 
   .display-speakers-button {
@@ -563,74 +571,71 @@ h2.skilly-container {
 
   .h5.card-title {
     text-align: initial;
-}
+  }
 
-.card-text {
-  font-size: 12px;
-  color: #fff;
-  text-align: center;
-}
+  .card-text {
+    font-size: 12px;
+    color: #fff;
+    text-align: center;
+  }
 
-.speakers {
-  display: grid;
-  grid-template-columns: 50% 50%;
-  column-gap: 10px;
-  row-gap: 10px;
-  margin: 48px;
-}
+  .speakers {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    column-gap: 10px;
+    row-gap: 10px;
+    margin: 48px;
+  }
 
-.about-container {
-  margin-top: 66px;
-}
+  .about-container {
+    margin-top: 66px;
+  }
 
-.about-h2 {
-  width: 70%;
+  .about-h2 {
+    width: 70%;
     margin-left: 15%;
     padding: 5rem;
-}
-h2.contact-h2 {
-  text-align: center;
-  font-size: 16px;
-  font-family: cocogoose_l, sans-serif;
-  margin-top: 110px;
-}
+  }
 
-.logo-container.container-fluid {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
+  h2.contact-h2 {
+    text-align: center;
+    font-size: 16px;
+    font-family: cocogoose_l, sans-serif;
+    margin-top: 110px;
+  }
 
-h2.skilly-container {
-  text-align: center;
-  font-size: 41px;
-  border: 1px solid rgb(211, 211, 211);
-  padding: 4px;
-  width: 25%;
-  outline: none;
-}
+  .logo-container.container-fluid {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 
-h2.email-h2 {
-  text-align: center;
-  font-size: 15px !important;
-  font-weight: 600;
-  text-decoration: underline;
-  margin-bottom: 48px;
-}
-.services-container .line-1 {
-  width: 3%;
-  border-color: #ec5242 !important;
-}
+  h2.skilly-container {
+    text-align: center;
+    font-size: 41px;
+    border: 1px solid rgb(211, 211, 211);
+    padding: 4px;
+    width: 25%;
+    outline: none;
+  }
 
-.line-1 {
-  width: 3%;
-  border-color: #ec5242 !important;
-}
+  h2.email-h2 {
+    text-align: center;
+    font-size: 15px !important;
+    font-weight: 600;
+    text-decoration: underline;
+    margin-bottom: 48px;
+  }
 
-.logo-container .line-1 {
-  width: 3%;
-  margin-top: -16px;
-  border-color: rgb(236, 82, 66) !important;
-}
+  .line-1 {
+    width: 3%;
+    border-color: #ec5242 !important;
+  }
+
+  .logo-container .line-1 {
+    width: 3%;
+    margin-top: -16px;
+    border-color: rgb(236, 82, 66) !important;
+  }
 }
