@@ -51,13 +51,6 @@ let speakersObj = [
     description:
       "Great Speaker with more than 6 years of experience in Backend Development.",
   },
-  {
-    image: "images/Daisy.png",
-    name: "Daisy Monroe",
-    status: "Backend Developer at AirBnB",
-    description:
-      "Great Speaker with more than 6 years of experience in Backend Development.",
-  },
 ];
 
 const speakers = document.getElementById("speakers");
