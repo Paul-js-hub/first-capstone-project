@@ -81,7 +81,7 @@ h3.description-paragraph {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-image: url("/images/services-bg.jpg");
+  background-image: url(images/services.png);
   margin: 32px 0;
 }
 
