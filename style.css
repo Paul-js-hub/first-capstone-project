@@ -511,7 +511,7 @@ h2.skilly-container {
     margin: 0;
     font-family: cocogoose_l, sans-serif;
     font-size: 1rem;
-    color: #ec5242;
+    color: #ec5242 !important;
     padding: 1rem;
     border-color: #ec5242;
     border-style: solid;
@@ -520,7 +520,7 @@ h2.skilly-container {
   }
 
   h5.logo-heading {
-    color: #ec5242;
+    color: #ec5242 !important;
   }
 
   .welcome-container {
