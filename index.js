@@ -53,45 +53,68 @@ let speakersObj = [
   },
 ];
 
-const speakers = document.getElementById("speakers");
-speakers.innerHTML = speakersObj.reduce(
-  (output, speaker) =>
-    `${output}
-    <div class="speaker" id="expand">
+let speakersOutputTemplate = '';
+const speakers = document.getElementById("speakers-id");
+
+for(let i = 0; i < 2; i += 1){
+  speakersOutputTemplate += `
+  <div class="speaker">
     <div class="speaker-image">
     <img
-        src="${speaker.image}"
+        src="${speakersObj[i].image}"
         alt="project-image"
     />
     </div>
     <div class="speaker-details">
-    <h2 class="h2 speaker-header">${speaker.name}</h2>
+    <h2 class="h2 speaker-header">${speakersObj[i].name}</h2>
       <h3 class="h3 speaker-status">
-        ${speaker.status}
+        ${speakersObj[i].status}
       </h3>
       <hr class="hr-line"/>
       <h3 class="h3 speaker-description">
-        ${speaker.description}
+        ${speakersObj[i].description}
       </h3>
     </div>
     </div>
-    `,
-  ""
-);
+  `
+}
 
+for(let i = 2; i < speakersObj.length; i += 1){
+  speakersOutputTemplate += `
+  <div class="speaker" id="expand">
+    <div class="speaker-image">
+    <img
+        src="${speakersObj[i].image}"
+        alt="project-image"
+    />
+    </div>
+    <div class="speaker-details">
+    <h2 class="h2 speaker-header">${speakersObj[i].name}</h2>
+      <h3 class="h3 speaker-status">
+        ${speakersObj[i].status}
+      </h3>
+      <hr class="hr-line"/>
+      <h3 class="h3 speaker-description">
+        ${speakersObj[i].description}
+      </h3>
+    </div>
+    </div>
+  `
+}
+
+speakers.innerHTML = speakersOutputTemplate;
 const showMore = document.querySelector(".more");
-const speaker = document.querySelector(".speaker");
-
+const speaker = document.querySelectorAll(".speaker");
 const showMoreList = () => {
-  if (speaker[3].id === "expand") {
-    for (let i = 3; i < speaker.length; i++) {
+  if (speaker[2].id === "expand") {
+    for (let i = 2; i < speaker.length; i += 1) {
       speaker[i].removeAttribute("id");
     }
     showMore.innerHTML = `LESS
         <span class="show-less"><i class="fa fa-angle-up" aria-hidden="true"></i
         ></span>`;
   } else {
-    for (let i = 3; i < speaker.length; i++) {
+    for (let i = 2; i < speaker.length; i += 1) {
       speaker[i].id = "expand";
     }
     showMore.innerHTML = `MORE
